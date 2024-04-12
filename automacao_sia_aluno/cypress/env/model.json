@@ -1,0 +1,25 @@
+{
+    "db": {
+      "user": "postgres",
+      "password": "qi9CxrVGSXQFu4C6",
+      "host": "seudbanco.postgres.database.azure.com",
+      "database": "test",
+      "ssl": true,
+      "port": 5432
+    },
+    "urlPortal": "http://dsiame.estacio.rj.br:12016/sianet/Logon",
+    "urlApi": "https://api.seusite.com",
+    "urlHome": "http://dsiame.estacio.rj.br:12016/portal/prt0001a.asp",
+    "users": {
+      "aluno": {
+        "principal": {
+          "matricula": "202201127295",
+          "senha": "1234as"
+        },
+        "branch1": {
+          "matricula": "201907344721",
+          "senha": "1234as"
+        }
+      }
+    }
+  }

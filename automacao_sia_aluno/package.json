@@ -1,0 +1,41 @@
+{
+  "name": "automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openProductionBrowser": "npx cypress open --env file=prod.json,grepTags=exploratory,width=Browser,height=Browser",
+    "runProductionBrowser": "npx cypress run --env file=prod.json,grepTags=exploratory,width=Browser,height=Browser",
+    "openTestBrowser": "npx cypress open --env grepTags=regressao,width=Browser,height=Browser",
+    "runTestBrowser": "npx cypress run --env grepTags=regressao,width=Browser,height=Browser",
+    "openFastTestBrowser": "npx cypress open --env grepTags=rapido,width=Browser,height=Browser",
+    "runFastTestBrowser": "npx cypress run --env grepTags=rapido,width=Browser,height=Browser",
+    "runTestCloud": "npx cypress run --record --key 7ae85fe1-5912-4d63-80ed-b3a61a34735d --tag 'exploratorio' --browser chrome --env grepTags=regressao,width=Browser,height=Browser",
+    "openTestMobile": "npx cypress open --env grepTags=regressao,width=Mobile,height=Mobile",
+    "runTestMobile": "npx cypress run --env grepTags=regressao,width=Mobile,height=Mobile",
+    "eslint:fix": "eslint --fix \"cypress/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.22.11",
+    "@babel/eslint-parser": "7.22.11",
+    "@babel/preset-env": "7.22.14",
+    "@cypress/grep": "4.0.0",
+    "@cypress/puppeteer": "^0.1.3",
+    "@cypress/webpack-preprocessor": "6.0.0",
+    "@faker-js/faker": "8.0.2",
+    "babel-loader": "9.1.3",
+    "cypress": "13.6.3",
+    "cypress-mochawesome-reporter": "^3.8.1",
+    "cypress-plugin-steps": "1.1.1",
+    "cypress-plugin-xhr-toggle": "1.0.0",
+    "dayjs": "^1.11.9",
+    "eslint": "8.48.0",
+    "eslint-plugin-cypress": "2.14.0",
+    "pdf-parse": "^1.1.1",
+    "pg": "8.11.3",
+    "webpack": "5.88.2"
+  }
+}

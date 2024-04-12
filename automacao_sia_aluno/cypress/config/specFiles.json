@@ -1,0 +1,12 @@
+{
+  "exploratory":[
+    "cypress/e2e/gui/exploratoryTestScenario.cy.js"
+  ],
+  "regressive": [
+    "cypress/e2e/gui/exploratoryTestScenario.cy.js"
+  ],
+  "rapido": [
+    "cypress/e2e/gui/user.cy.js"
+  ]
+
+}
